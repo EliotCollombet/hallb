@@ -3,6 +3,7 @@
 import VideoBackground from "@/app/ui/video-background";
 import React, { useEffect } from "react";
 
+
 export default function Home() {
   useEffect(() => {
     // Scroll animation
@@ -58,7 +59,7 @@ export default function Home() {
         </div>
       </div>
       <main>
-
+                
       </main>
 
       

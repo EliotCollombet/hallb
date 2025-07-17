@@ -7,6 +7,8 @@ import Link from 'next/link';
 import Image from 'next/image'
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
+import { LinkedButton } from "@/app/ui/linked-buttons";
+
 
 interface NavigationBarProps {
   logo?: string;
@@ -62,18 +64,8 @@ export default function NavigationBar({
               {link.title}
             </Link>
           ))}
-          <Link
-            href=""
-            className="text-secondary hover:bg-primary transition-colors duration-200 bg-accent ml-3 p-2 rounded-lg"
-          >
-            Réserver un terrain de Squash
-          </Link>
-          <Link
-            href=""
-            className="text-secondary hover:bg-primary transition-colors duration-200 bg-accent p-2 rounded-lg"
-          >
-            Réserver un ostéo
-          </Link>
+          <LinkedButton id="Squash" variant="accent" className="ml-3"/>
+          <LinkedButton id="Osteo" variant="accent"/>
         </div>
 
         {/* Mobile Menu Button */}
@@ -108,19 +100,8 @@ export default function NavigationBar({
                 {link.title}
               </Link>
             ))}
-            <Link
-              href=""
-              className="block py-2 text-primary focus:text-accent transition-colors duration-200"
-            >
-              Réserver un terrain de Squash
-            </Link>
-            
-            <Link
-              href=""
-              className="block py-2 text-primary focus:text-accent transition-colors duration-200"
-            >
-              Réserver un ostéo
-            </Link>
+            <LinkedButton id="Squash" variant="box"/>
+            <LinkedButton id="Osteo" variant="box"/>
           </div>
         </div>
       )}

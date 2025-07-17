@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className="sticky top-0 z-50">
             <NavigationBar />
           </div>
-          <div className="pt-20 bg-secondary">
+          <div className="pt-22 bg-secondary">
             {showPopup && <TrialPopup onClose={() => setShowPopup(false)} />}
             {children}
           </div>
