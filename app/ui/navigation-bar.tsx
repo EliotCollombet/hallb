@@ -49,7 +49,7 @@ export default function NavigationBar({
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-6">
           {links.map((link, index) => (
             <Link
                 key={index}
@@ -69,7 +69,7 @@ export default function NavigationBar({
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Button
             variant="ghost"
             size="icon"
@@ -83,7 +83,7 @@ export default function NavigationBar({
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-secondary/60 py-4 px-4">
+        <div className="lg:hidden bg-secondary/60 py-4 px-4">
           <div className="flex flex-col space-y-4">
             {links.map((link, index) => (
               <Link

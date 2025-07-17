@@ -36,12 +36,15 @@ export default function Home() {
         <div className="relative h-screen">
           <VideoBackground />
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4">
-            <div className="container max-w-4xl mx-auto text-center">
-              <h1 className="uppercase text-white lg:tracking-[1rem] mb-6 text-3xl font-medium md:text-5xl lg:text-6xl animate-fade-in-up">
-                Bienvenue à HALL B
+            <div className="container w-full max-w-4xl mx-auto text-center">
+              <h1 className="uppercase text-primary lg:tracking-[1rem] mb-6 text-3xl font-medium md:text-5xl lg:text-6xl animate-fade-in-up">
+                Bienvenue à Hall B
               </h1>
-              <p className="mb-8 text-xl text-white opacity-90 animate-fade-in-up animation-delay-300">
-                Votre salle de sport haut de gamme en Vaunage
+              <h2 className="mb-8 text-xl text-primary opacity-90 animate-fade-in-up animation-delay-300">
+                Le plus grand complexe multisports en Vaunage.
+              </h2>
+              <p className="uppercase text-2xl lg:text-4xl text-primary opacity-80 animate-fade-in-up animation-delay-600">
+                Musculation - Fitness - Aqua - Squash
               </p>
               {/* <Button
                 size="lg"
