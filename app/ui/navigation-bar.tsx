@@ -53,20 +53,27 @@ export default function NavigationBar({
                 key={index}
                 href={link.href}
                 className={clsx("hover:text-accent transition-colors duration-200",
-                    {
-                        'bg-sky-100 text-blue-600': pathname === link.href
-                    }
+                  {
+                    'text-accent': pathname === link.href, 
+                    'text-primary': pathname !== link.href
+                  }
                 )}
             >
               {link.title}
             </Link>
           ))}
-          <Button variant="default" className="text-secondary bg-accent ml-4">
+          <Link
+            href=""
+            className="text-secondary hover:bg-primary transition-colors duration-200 bg-accent ml-3 p-2 rounded-lg"
+          >
             Réserver un terrain de Squash
-          </Button>
-          <Button variant="default" className="text-secondary bg-accent ml-4">
+          </Link>
+          <Link
+            href=""
+            className="text-secondary hover:bg-primary transition-colors duration-200 bg-accent p-2 rounded-lg"
+          >
             Réserver un ostéo
-          </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -84,21 +91,36 @@ export default function NavigationBar({
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-secondary bg-opacity-95 py-4 px-4">
+        <div className="md:hidden bg-secondary/60 py-4 px-4">
           <div className="flex flex-col space-y-4">
             {links.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
-                className="block py-2 text-primary hover:text-accent transition-colors duration-200"
+                className={clsx("block py-2 hover:text-accent transition-colors duration-200", 
+                  {
+                    'text-accent': pathname === link.href,
+                    'text-primary': pathname !== link.href
+                  }
+                )}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.title}
               </Link>
             ))}
-            <Button variant="default" className="w-full mt-2">
-              Join Now
-            </Button>
+            <Link
+              href=""
+              className="block py-2 text-primary focus:text-accent transition-colors duration-200"
+            >
+              Réserver un terrain de Squash
+            </Link>
+            
+            <Link
+              href=""
+              className="block py-2 text-primary focus:text-accent transition-colors duration-200"
+            >
+              Réserver un ostéo
+            </Link>
           </div>
         </div>
       )}

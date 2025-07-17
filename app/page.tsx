@@ -1,19 +1,10 @@
 "use client"
 
 import VideoBackground from "@/app/ui/video-background";
-import React, { useEffect, useState } from "react";
-import TrialPopup from "@/app/ui/trial-popup";
-import NavigationBar from "@/app/ui/navigation-bar";
+import React, { useEffect } from "react";
 
 export default function Home() {
-  const [showPopup, setShowPopup] = useState(false);
-
   useEffect(() => {
-    // Pop up après 0.5 secondes
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 500);
-
     // Scroll animation
     const observerOptions = {
       threshold: 0.1,
@@ -34,7 +25,6 @@ export default function Home() {
 
     return () => {
       // Nettoyage
-      clearTimeout(timer);
       observer.disconnect();
     };
   }, []);
@@ -43,32 +33,26 @@ export default function Home() {
     <div>
       <div className="relative bg-black">
         <div className="relative h-screen">
-          <div className="sticky top-0 z-50">
-            <NavigationBar />
-          </div>
-
-          <div className="pt-20">
-            <VideoBackground />
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4">
-              <div className="container max-w-4xl mx-auto text-center">
-                <h1 className="uppercase text-white lg:tracking-[1rem] mb-6 text-3xl font-medium md:text-5xl lg:text-6xl animate-fade-in-up">
-                  Bienvenu à HALL B
-                </h1>
-                <p className="mb-8 text-xl text-white opacity-90 animate-fade-in-up animation-delay-300">
-                  Votre salle de sport haut de gamme en Vaunage
-                </p>
-                {/* <Button
-                  size="lg"
-                  className="px-8 py-6 text-lg bg-primary hover:bg-primary/90 animate-fade-in-up animation-delay-600"
-                  onClick={() =>
-                    document
-                      .getElementById("about")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  Discover More
-                </Button> */}
-              </div>
+          <VideoBackground />
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4">
+            <div className="container max-w-4xl mx-auto text-center">
+              <h1 className="uppercase text-white lg:tracking-[1rem] mb-6 text-3xl font-medium md:text-5xl lg:text-6xl animate-fade-in-up">
+                Bienvenue à HALL B
+              </h1>
+              <p className="mb-8 text-xl text-white opacity-90 animate-fade-in-up animation-delay-300">
+                Votre salle de sport haut de gamme en Vaunage
+              </p>
+              {/* <Button
+                size="lg"
+                className="px-8 py-6 text-lg bg-primary hover:bg-primary/90 animate-fade-in-up animation-delay-600"
+                onClick={() =>
+                  document
+                    .getElementById("about")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Discover More
+              </Button> */}
             </div>
           </div>
         </div>
@@ -77,8 +61,7 @@ export default function Home() {
 
       </main>
 
-      {/* Trial Popup */}
-      {showPopup && <TrialPopup onClose={() => setShowPopup(false)} />}
+      
 
     </div>
   );
