@@ -7,7 +7,7 @@
 
 @theme {
     --color-primary: #FFFFFF;
-    --color-primary-hover: #fafafa;
+    --color-primary-hover: #f5f5f5;
     --color-secondary: #000000;
     --color-tertiary: #718096;
     --color-accent: #E1C340;
@@ -26,6 +26,11 @@
 
   .animation-delay-600 {
     animation-delay: 0.6s;
+    opacity: 0;
+  }
+
+  .animation-delay-900 {
+    animation-delay: 0.9s;
     opacity: 0;
   }
 

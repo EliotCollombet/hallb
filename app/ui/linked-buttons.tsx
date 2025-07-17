@@ -8,14 +8,18 @@ const linkedButtonVariants = cva(
   "transition-colors duration-200 rounded-lg",
   {
     variants: {
-      variant: {
-        primary: "bg-primary text-secondary hover:bg-primary-hover p-2",
-        accent: "bg-accent text-secondary hover:bg-primary-hover p-2",
-        box: "text-primary block py-2 hover:text-accent"
-      },
+        variant: {
+            primary: "bg-primary text-secondary hover:bg-primary-hover p-2",
+            accent: "bg-accent text-secondary hover:bg-primary-hover p-2",
+            box: "text-primary block py-2 hover:text-accent bg-transparent"
+        }, 
+        size: {
+            normal: "text-sm"
+        }, 
     },
     defaultVariants: {
       variant: "primary",
+      size: "normal"
     },
   }
 );

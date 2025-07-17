@@ -12,6 +12,6 @@ En développement
 + Automatiser padding-y de la video
 + Gerer chemin manuel taper par l'utilisateur
 + Clean les import de radix ui
-+ Gérer proprement tous les liens
-+ Cliquer ailleurs sur mobile ferme le menu
 + Faire attention a l'utilisateur qui tape une route
++ bug mode mobile sur nav web plus redimensionnement
++ animation menu mobile
