@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Title from "@/app/ui/mainpage/title";
+import Concept from "@/app/ui/mainpage/concept";
 
 export default function Home() {
   // useEffect(() => {
@@ -32,18 +33,37 @@ export default function Home() {
   return (
     <div>
       <main>
-        <Title/>
-        <div className="relative container">
-          <h2 className="text-white text-3xl">
-            Notre Concept
-          </h2>
-          <h2>
-            Nos valeurs
-          </h2>
-          <h2>
-            Notre histoire
-          </h2>
-        </div>
+        <section id="home">
+          <Title/>
+        </section>
+
+        <section id="concept">
+          <Concept/>
+        </section>
+
+        <section id="valeurs">
+          <div className="text-white relative container">
+            <h2>
+              Nos valeurs
+            </h2>
+          </div>
+        </section>
+
+        <section id="histoire">
+          <div className="text-white relative container">
+            <h2>
+              Notre histoire
+            </h2>
+          </div>
+        </section>
+
+        <section id="musculation">
+          <div className="text-white relative container">
+            <h2>
+              Musculation
+            </h2>
+          </div>
+        </section>
       </main>
       <footer>
       </footer>

@@ -112,13 +112,13 @@ export default function NavigationBar({
           </div>
 
           {isMenuOpen && (
-            <div className="mt-3 py-4 bg-secondary/70 h-full px-4">
-              <div className="flex flex-col space-y-4">
+            <div className="mt-3 py-4 bg-secondary/30 h-full px-4">
+              <div className="flex flex-col space-y-2">
                 {links.map((link, index) => (
                   <Link
                     key={index}
                     href={link.href}
-                    className={clsx("block py-2 hover:text-accent transition-colors duration-200", 
+                    className={clsx("text-sm block py-1.5 hover:text-accent transition-colors duration-200", 
                       {
                         'text-accent': pathname === link.href,
                         'text-primary': pathname !== link.href
@@ -129,6 +129,7 @@ export default function NavigationBar({
                     {link.title}
                   </Link>
                 ))}
+                <hr className="my-4 border-t border-tertiary" />
                 <LinkedButton id="Squash" variant="box"/>
                 <LinkedButton id="Osteo" variant="box"/>
               </div>

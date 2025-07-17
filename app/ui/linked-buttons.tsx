@@ -11,7 +11,7 @@ const linkedButtonVariants = cva(
         variant: {
             primary: "bg-primary text-secondary hover:bg-primary-hover p-2",
             accent: "bg-accent text-secondary hover:bg-primary-hover p-2",
-            box: "text-primary block py-2 hover:text-accent bg-transparent"
+            box: "text-primary-hover block py-2 hover:text-accent bg-transparent"
         }, 
         size: {
             normal: "text-sm", 
