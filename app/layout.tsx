@@ -5,6 +5,7 @@ import "./globals.css";
 import NavigationBar from "@/app/ui/navigation-bar";
 import TrialPopup from "@/app/ui/trial-popup";
 import { useEffect, useState } from "react";
+import Footer from "./ui/footer";
 
 export default function RootLayout({
   children,
@@ -27,12 +28,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${futureTense.className} antialiased leading-none`}>
-          <div className="sticky top-0 z-50">
-            <NavigationBar />
-          </div>
-          <div className="bg-secondary">
-            {showPopup && <TrialPopup onClose={() => setShowPopup(false)} />}
-            {children}
+          <div className="flex flex-col h-screen">
+            <div>
+              <div className="sticky top-0 z-50">
+                <NavigationBar />
+              </div>
+              <div className="bg-secondary">
+                {showPopup && <TrialPopup onClose={() => setShowPopup(false)} />}
+                {children}
+              </div>
+            </div>
+            <footer>
+              <Footer/>
+            </footer>
           </div>
       </body>
     </html>

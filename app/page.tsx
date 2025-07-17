@@ -2,7 +2,9 @@
 
 import React, { useEffect } from "react";
 import Title from "@/app/ui/mainpage/title";
-import Concept from "@/app/ui/mainpage/concept";
+import Valeurs from "./ui/mainpage/valeurs";
+import Concept from "./ui/mainpage/concept";
+import Histoire from "./ui/mainpage/histoire";
 
 export default function Home() {
   // useEffect(() => {
@@ -37,36 +39,28 @@ export default function Home() {
           <Title/>
         </section>
 
-        <section id="concept">
-          <Concept/>
-        </section>
+        <div className="relative w-full h-[1050px]">
 
-        <section id="valeurs">
-          <div className="text-white relative container">
-            <h2>
-              Nos valeurs
-            </h2>
+          <div className="h-full w-full absolute inset-0 flex flex-col">
+            <div className="w-full h-[500px] bg-secondary"/>
+            <div className="w-full h-[600px] bg-secondary-light"/>
+            <div className="w-full h-auto bg-secondary"/>
           </div>
-        </section>
 
-        <section id="histoire">
-          <div className="text-white relative container">
-            <h2>
-              Notre histoire
-            </h2>
-          </div>
-        </section>
+          <section id="valeurs" className="absolute inset-0 w-full h-auto">
+            <Valeurs/>
+          </section>
 
-        <section id="musculation">
-          <div className="text-white relative container">
-            <h2>
-              Musculation
-            </h2>
-          </div>
-        </section>
+          <section id="concept" className="absolute top-[281px] w-full h-auto">
+            <Concept/>
+          </section>
+
+          <section id="histoire" className="absolute top-[677px] w-full h-auto">
+            <Histoire/>
+          </section>
+
+        </div>
       </main>
-      <footer>
-      </footer>
     </div>
   );
 }
