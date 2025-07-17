@@ -14,7 +14,8 @@ const linkedButtonVariants = cva(
             box: "text-primary block py-2 hover:text-accent bg-transparent"
         }, 
         size: {
-            normal: "text-sm"
+            normal: "text-sm", 
+            big: "text-2xl, px-7 py-4"
         }, 
     },
     defaultVariants: {
@@ -30,7 +31,7 @@ type LinkedButtonProps =
         className?: string;
     };
 
-export function LinkedButton({ id, className, variant, ...props }: LinkedButtonProps) {
+export function LinkedButton({ id, className, variant, size, ...props }: LinkedButtonProps) {
     const linkObject = links.find(item => item.id === id);
     let link = defaultLink
     let text = ""
@@ -40,7 +41,7 @@ export function LinkedButton({ id, className, variant, ...props }: LinkedButtonP
     return (
         <Link
             href = {link}
-            className={clsx(linkedButtonVariants({ variant }), className)}
+            className={clsx(linkedButtonVariants({ variant, size }), className)}
             {...props}
         >
             {text}

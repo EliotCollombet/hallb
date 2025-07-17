@@ -15,3 +15,5 @@ En développement
 + Faire attention a l'utilisateur qui tape une route
 + bug mode mobile sur nav web plus redimensionnement
 + animation menu mobile
++ Distinguer les 2 derniers dans le menu mobile
++ Corriger pop up

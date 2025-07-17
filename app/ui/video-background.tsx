@@ -7,5 +7,12 @@ export default function VideoBackground() {
         return;
     }
 
-    return <video src={video.path} autoPlay playsInline muted loop preload="auto" className="absolute min-w-full min-h-full object-cover w-auto h-auto"/>;
+    return (
+        <video src={video.path}
+            autoPlay
+            playsInline
+            muted loop
+            preload="auto"
+            className="absolute min-w-full h-full object-cover w-auto h-auto"/>
+    );
 }
