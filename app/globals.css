@@ -122,3 +122,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.scroll-container {
+  -webkit-overflow-scrolling: auto; /* au lieu de 'touch', désactive le lancé de scroll */
+}

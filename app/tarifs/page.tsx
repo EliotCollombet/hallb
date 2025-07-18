@@ -80,9 +80,9 @@ function SectionAnime() {
   return (
     <div
       ref={containerRef}
-      className="h-[200vh] w-full"
+      className="h-[200vh] w-full scroll-container"
     >
-        <div className="sticky top-20 flex flex-col">
+        <div className="sticky top-20 flex flex-col space-y-20">
             <h2 className="uppercase text-primary text-4xl mb-2">Classic</h2>
             <p className="uppercase text-accent text-sm mb-10">
                 Muscu & Cardio accès libre.
