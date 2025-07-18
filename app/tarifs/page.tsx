@@ -26,8 +26,9 @@ function Cadre({ className, src, trigger }: { className: string; src: string, tr
                         scale: 1,
                     }}
                     transition={{
-                        duration: 0.8,
-                        ease: [0.25, 0.8, 0.25, 1],
+                        type: "spring", 
+                        stiffness: 60, 
+                        damping: 12
                     }}
                     exit={{
                         opacity: 0,
@@ -36,7 +37,7 @@ function Cadre({ className, src, trigger }: { className: string; src: string, tr
                         rotate: -30,
                         scale: 0.8,
                     }}
-                    className={clsx("flex items-center justify-center rounded-xl h-[300px] w-[80%] overflow-hidden", className)}
+                    className={clsx("will-change-transform flex items-center justify-center rounded-xl h-[300px] w-[80%] overflow-hidden", className)}
                     >
                     <Image 
                         src={src}
