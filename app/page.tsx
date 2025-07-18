@@ -39,23 +39,23 @@ export default function Home() {
           <Title/>
         </section>
 
-        <div className="relative w-full h-[1050px]">
+        <div className="flex flex-col lg:relative w-full h-fit lg:h-[1050px]">
 
-          <div className="h-full w-full absolute inset-0 flex flex-col">
+          <div className="hidden lg:flex h-full w-full absolute inset-0 flex-col">
             <div className="w-full h-[500px] bg-secondary"/>
             <div className="w-full h-[600px] bg-secondary-light"/>
             <div className="w-full h-auto bg-secondary"/>
           </div>
 
-          <section id="valeurs" className="absolute inset-0 w-full h-auto">
+          <section id="valeurs" className="lg:absolute inset-0 w-full h-auto">
             <Valeurs/>
           </section>
 
-          <section id="concept" className="absolute top-[281px] w-full h-auto">
+          <section id="concept" className="lg:absolute top-[281px] w-full h-auto">
             <Concept/>
           </section>
 
-          <section id="histoire" className="absolute top-[677px] w-full h-auto">
+          <section id="histoire" className="lg:absolute top-[677px] w-full h-auto">
             <Histoire/>
           </section>
 
