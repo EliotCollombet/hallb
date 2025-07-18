@@ -57,6 +57,67 @@
     transform: translateY(0);
   }
 }
+@keyframes highlightCycle1 {
+  0%, 10% {
+    color: var(--color-primary);
+  }
+  20%, 30% {
+    color: var(--color-accent);
+  }
+  40% {
+    color: var(--color-primary);
+  }
+}
+
+@keyframes highlightCycle2 {
+  0%, 35% {
+    color: var(--color-primary);
+  }
+  45%, 55% {
+    color: var(--color-accent);
+  }
+  65% {
+    color: var(--color-primary);
+  }
+}
+
+@keyframes highlightCycle3 {
+  0%, 60% {
+    color: var(--color-primary);
+  }
+  70%, 80% {
+    color: var(--color-accent);
+  }
+  90% {
+    color: var(--color-primary);
+  }
+}
+
+@keyframes highlightCycle4 {
+  0%, 5% {
+    color: var(--color-accent);
+  }
+  15%, 85% {
+    color: var(--color-primary);
+  }
+  95%, 100% {
+    color: var(--color-accent);
+  }
+}
+
+.highlight-1 {
+  animation: highlightCycle1 4s linear infinite;
+}
+.highlight-2 {
+  animation: highlightCycle2 4s linear infinite;
+}
+.highlight-3 {
+  animation: highlightCycle3 4s linear infinite;
+}
+.highlight-4 {
+  animation: highlightCycle4 4s linear infinite;
+}
+
 
 html {
   scroll-behavior: smooth;

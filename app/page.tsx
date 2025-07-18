@@ -7,30 +7,30 @@ import Concept from "./ui/mainpage/concept";
 import Histoire from "./ui/mainpage/histoire";
 
 export default function Home() {
-  // useEffect(() => {
-  //   // Scroll animation
-  //   const observerOptions = {
-  //     threshold: 0.1,
-  //     rootMargin: "0px 0px -50px 0px",
-  //   };
+  useEffect(() => {
+    // Scroll animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
 
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("animate-fade-in-up");
-  //       }
-  //     });
-  //   }, observerOptions);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-up");
+        }
+      });
+    }, observerOptions);
 
-  //   // On observe les éléments avec animate-on-scroll
-  //   const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
-  //   elementsToAnimate.forEach((el) => observer.observe(el));
+    // On observe les éléments avec animate-on-scroll
+    const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+    elementsToAnimate.forEach((el) => observer.observe(el));
 
-  //   return () => {
-  //     // Nettoyage
-  //     observer.disconnect();
-  //   };
-  // }, []);
+    return () => {
+      // Nettoyage
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div>
@@ -39,11 +39,11 @@ export default function Home() {
           <Title/>
         </section>
 
-        <div className="flex flex-col lg:relative w-full h-fit lg:h-[1050px]">
+        <div className="flex flex-col relative w-full h-fit lg:h-[1050px]">
 
-          <div className="hidden lg:flex h-full w-full absolute inset-0 flex-col">
-            <div className="w-full h-[500px] bg-secondary"/>
-            <div className="w-full h-[600px] bg-secondary-light"/>
+          <div className=" lg:flex h-full w-full absolute inset-0 flex-col">
+            <div className="w-full h-[300px] bg-secondary"/>
+            <div className="w-full h-[350px] bg-secondary-light"/>
             <div className="w-full h-auto bg-secondary"/>
           </div>
 
@@ -58,6 +58,7 @@ export default function Home() {
           <section id="histoire" className="lg:absolute top-[677px] w-full h-auto">
             <Histoire/>
           </section>
+          
 
         </div>
       </main>

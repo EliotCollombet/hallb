@@ -20,10 +20,10 @@ export default function Valeurs() {
                     {im}
                 </div>
                 <div className="flex flex-col gap-y-10 pt-20">
-                    <h2 className="text-left text-4xl text-primary">
+                    <h2 className="animate-on-scroll text-left text-4xl text-primary">
                         {title}
                     </h2>
-                    <p className="text-xl text-primary">
+                    <p className="animate-on-scroll text-xl text-primary">
                         Convivialité, Entraide, Accompagnement.
                     </p>
                 </div>
@@ -31,13 +31,13 @@ export default function Valeurs() {
             <div className="relative lg:hidden">
                 {im}
                 <div className="absolute inset-0 p-10 flex flex-col">
-                    <span className="text-primary text-5xl mb-15">
+                    <span className="animate-on-scroll text-primary text-5xl mb-15">
                         {title}
                     </span>
                     <div className="flex flex-col text-primary text-2xl space-y-5">
-                        <p className="flex justify-center bg-primary/5 backdrop-blur-xs py-3 rounded-xs shadow-sm">Convivialité.</p>
-                        <p className="flex justify-center bg-primary/5 backdrop-blur-xs py-3 rounded-xs shadow-sm">Entraide.</p>
-                        <p className="flex justify-center bg-primary/5 backdrop-blur-xs py-3 rounded-xs shadow-sm">Accompagnement.</p>
+                        <p className="animate-on-scroll flex justify-center bg-primary/5 backdrop-blur-xs py-3 rounded-xs shadow-sm">Convivialité.</p>
+                        <p className="animate-on-scroll flex justify-center bg-primary/5 backdrop-blur-xs py-3 rounded-xs shadow-sm">Entraide.</p>
+                        <p className="animate-on-scroll flex justify-center bg-primary/5 backdrop-blur-xs py-3 rounded-xs shadow-sm">Accompagnement.</p>
                     </div>
                 </div>
             </div>

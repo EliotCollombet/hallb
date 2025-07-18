@@ -14,17 +14,17 @@ export default function Concept() {
             Notre<br/>Concept
         </p>
     const txt1 =
-        <p>
+        <span>
             2400m2 d'infrastructure sportive flambant neuve.
             Nombreuses activités, musculation cours collectifs et smallgroups avec coach diplômé, squash, danse, Pôle Aqua et pôle santé avec notre ostéopathe.
-        </p>
+        </span>
     const txt2 =
-        <p>
+        <span>
             Cours collectifs, smallgroups, et cours aquatiques en illimité toute la semaine pour les formules associées.
             Nous tenons à ce que chaque adhérent qui visite la salle ne veuille plus en partir.
             Tout le monde doit se sentir considéré et accompagné. Matériel sélectionné sur le volet pour satisfaire tout type de pratiquant.
             Poids calibrés pour la compétition, plateau d'haltérophilie, sacs de frappe pour les boxeurs, machines de musculation qualité italienne signée panatta, cardio connecté par technogym.
-        </p>
+        </span>
     return (
         <span>
             <div className="hidden lg:flex px-10 h-auto w-full flex-row space-x-10">

@@ -15,7 +15,7 @@ const linkedButtonVariants = cva(
         }, 
         size: {
             normal: "text-sm", 
-            big: "text-2xl, px-7 py-4"
+            big: "text-2xl, w-full py-4"
         }, 
     },
     defaultVariants: {

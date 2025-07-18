@@ -18,3 +18,4 @@ En développement
 + Distinguer les 2 derniers dans le menu mobile
 + Corriger pop up
 + bug ouvrir menu mobile -> redimensionner
++ Animations sur accueil
