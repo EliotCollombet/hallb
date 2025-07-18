@@ -1,6 +1,6 @@
 [
-    { "id": "Subscribe", "text": "S'abonner", "link": ""}, 
+    { "id": "Subscribe", "text": "Je m'inscris", "link": ""}, 
     { "id": "Squash", "text": "Réservation Squash", "link":""}, 
     { "id": "Osteo", "text": "Consultation Osteo", "link": ""}, 
-    { "id": "FreeTrial", "text": "Séance Gratuite", "link": ""}
+    { "id": "FreeTrial", "text": "Séance d'essai offerte", "link": ""}
 ]

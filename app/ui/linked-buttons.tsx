@@ -5,7 +5,7 @@ import links from "@/interface/linked-button.json"
 import { defaultLink } from "@/app/lib/links";
 
 const linkedButtonVariants = cva(
-  "transition-colors duration-200 rounded-lg",
+  "uppercase transition-colors duration-200 rounded-lg",
   {
     variants: {
         variant: {
